@@ -15,41 +15,46 @@ body {
     height: 290px;
     width: 350px;
 }
-h1 {
-    font-size: 28px;
-    padding: 0 155px 0 155px;
-    color: #000000 ;
-}
-h2 {
-    font-size: 16px; 
-}
-p {
-   color: #8B8B8B; 
-}
-
 .kontejner1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center; 
-    border-radius: 20px;
-    color: #FFFFFF;
+    align-items: center; 
+}
+h1 {
+    font-size: 28px;
+    font-style: medium;
+    padding: 0 155px 0 155px;
+    color: #000000 ;
+}
+.tlacitka {
+    display: flex;
+    flex-direction: column;
+}
+.button {  
+    color: #FFFFFF; 
+    border-style: none;
+    border-radius: 20px; 
+    background-color: #407BFF;
+    width: fit-content;
+    padding: 10px 30px;
+    align-items: center;
+}
+.button-secondary {
+    background-color: #8B8B8B; 
+    margin-top: 10px;
     
 }
-.Chci {
-    background-color: #407BFF;
-    border-radius: 20px;
-    width: 195px;
-    margin: auto;
-    padding: 10px 30px 10px 30px;
+
+h2 {
+    font-size: 16px; 
+    font-style: medium;
 }
-.Radeji{
-    background-color: #8B8B8B; 
-    border-radius: 20px;
-    width: 220px;
-    padding: 10px 30px 10px 30px;
-    margin: 10px auto;
+p {
+   color: #8B8B8B; 
 }
+
 .sluzby {
     display: flex;
     flex-direction: column;
@@ -95,22 +100,18 @@ img {
     padding: 30px 20px 20px 10px;
     flex: 1 1 25%;
 }
-
-
-    
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 640px){
     .obal {
         text-align: center;
         display: flex;
         flex-direction: column;
     }
-	.kontejner1 {
-        display:flex;
-        flex-direction: column;
     }
     .tlacitka {
         display: flex;
+        color: #FFFFFF;
     }
+
     .kontejnerSluzby,
     .kontejnerDelegati {
         display: flex;
@@ -127,6 +128,9 @@ img {
         flex-direction: column;
         padding-top: 0;
     }
+    img {
+        align-self: center;
+    }
 }
-
+@media screen and (min-width: 1100px) {
 
