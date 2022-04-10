@@ -107,9 +107,8 @@ img {
         flex-direction: column;
     }
     }
-    .tlacitka {
+    .button {
         display: flex;
-        color: #FFFFFF;
     }
 
     .kontejnerSluzby,
