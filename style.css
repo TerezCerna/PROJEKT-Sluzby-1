@@ -90,8 +90,27 @@ img {
 img {
     align-self: center;
 }
-
-
-
+}
+@media screen and (min-width: 700px){
+.horni {
+    display: flex;
+}
+    .happy {
+    order: 1;
+}
+    .kontejner1 {
+    justify-content: center;
+}
+    .textHappy {
+    text-align: left;  
+}
+.sluzby,
+.delegati {
+    display: flex;
+}
+.kontejnerSluzby {
+    display: flex;
+    order: -1;
+}
 
 }
